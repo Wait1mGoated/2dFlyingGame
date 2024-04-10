@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0329866fa5428b549b5d3f40240bcebf
+guid: 178d35e0129020048a1d01d3da6216eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2324715518332284020
-    second: Main Character_0
+      213: -6889673694603844645
+    second: evilbaby_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Character_0
+      name: evilbaby_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 19
-        width: 48
-        height: 44
+        x: 9
+        y: 12
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8357fd8d83fcbfd0800000000000000
-      internalID: -2324715518332284020
+      spriteID: bd3e8ce1746f260a0800000000000000
+      internalID: -6889673694603844645
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Main Character_0: -2324715518332284020
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

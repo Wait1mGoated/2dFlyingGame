@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fShoemaker_0: -4863176896453164250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

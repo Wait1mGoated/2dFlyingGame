@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jet Pack on_0: 1661584476845178698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
