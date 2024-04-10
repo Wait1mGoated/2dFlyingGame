@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 40cf8de4a812840499f2bcfaf663c80d
-=======
-guid: 4b1a927249e786e4db7cfefdc280cfb8
->>>>>>> 06ae93c48d042b7870960075825ca89dfac2ff42
+guid: b62a9116ceadb774ab84be3e132f4400
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3763752930381237044
-    second: New Piskel (2)_0
+      213: 605162050437240712
+    second: sun_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -102,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (2)_0
+      name: sun_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 3
-        width: 22
-        height: 28
+        x: 6
+        y: 6
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43b85b559598b3430800000000000000
-      internalID: 3763752930381237044
+      spriteID: 887dbd7bda7f56800800000000000000
+      internalID: 605162050437240712
       vertices: []
       indices: 
       edges: []
