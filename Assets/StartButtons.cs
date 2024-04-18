@@ -17,9 +17,14 @@ public class StartButtons : MonoBehaviour
     public void ToGame()
     {
         Debug.Log("This should switch to the game scene");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
+    public void ToUpgrades() 
+    {
+        Debug.Log("This should switch to the upgrade scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
     public void SettingsScreen()
     {
         Debug.Log("This should open the settings panel");
