@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      evilbaby (1)_0: 3299882180536770234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

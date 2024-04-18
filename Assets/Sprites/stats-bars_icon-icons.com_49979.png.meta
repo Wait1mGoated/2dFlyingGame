@@ -200,7 +200,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stats-bars_icon-icons.com_49979_0: 6621520289950592543
+      stats-bars_icon-icons.com_49979_1: -6104820334375383942
+      stats-bars_icon-icons.com_49979_2: -7601653407847207110
+      stats-bars_icon-icons.com_49979_3: 8063254245799928605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

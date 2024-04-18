@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngtree-vector-statistics-icon-png-image_322171_0: -8484707418915660279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
