@@ -31,9 +31,9 @@ public class ScoreLogic : MonoBehaviour
             currentTime += Time.deltaTime; 
         }
         alt = Mathf.RoundToInt(currentTime * 4);
-        altText.text = alt.ToString();
+        altText.text = alt.ToString() + " km";
         score = Mathf.RoundToInt((currentTime + alt) * multiplier);
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: " + score.ToString();
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.ToString(@"mm\:ss\:fff");
     }
