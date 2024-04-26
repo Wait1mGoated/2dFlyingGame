@@ -47,4 +47,5 @@ public class ScoreLogic : MonoBehaviour
     {
         stopwatchActive = false;
     }
+
 }

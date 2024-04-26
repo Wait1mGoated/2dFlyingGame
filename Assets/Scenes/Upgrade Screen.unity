@@ -356,7 +356,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 99222891}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Launcher3Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &99222891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +721,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -867,7 +879,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -1002,8 +1014,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 366.52734, y: 70}
-  m_SizeDelta: {x: 150.9453, y: 30}
+  m_AnchoredPosition: {x: 328.90344, y: 70}
+  m_SizeDelta: {x: 75.6976, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291236345
 MonoBehaviour:
@@ -1213,7 +1225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 400851547}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Gear1Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &400851547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,8 +1640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 342, y: 72}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 315.68958, y: 72}
+  m_SizeDelta: {x: 107.3792, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498086611
 MonoBehaviour:
@@ -1736,8 +1760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 353, y: 66}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 318.38104, y: 66}
+  m_SizeDelta: {x: 90.7621, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658331881
 MonoBehaviour:
@@ -2024,7 +2048,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -2103,7 +2127,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -2249,6 +2273,7 @@ GameObject:
   - component: {fileID: 849240414}
   - component: {fileID: 849240413}
   - component: {fileID: 849240412}
+  - component: {fileID: 849240416}
   m_Layer: 5
   m_Name: Upgrade UI
   m_TagString: Untagged
@@ -2345,6 +2370,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &849240416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849240411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad985043cd654d46939eccf1429c7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 20000
+  moneyText: {fileID: 762189}
+  gear1Text: {fileID: 247171307}
+  gear2Text: {fileID: 802042988}
+  gear3Text: {fileID: 1383341319}
+  launcher1Text: {fileID: 265032226}
+  launcher2Text: {fileID: 1575552519}
+  launcher3Text: {fileID: 725177378}
 --- !u!1 &866452492
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,7 +3257,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1163836010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Launcher2Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1163836010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,7 +3844,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -3839,8 +3896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 342, y: 72}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 316.67627, y: 72}
+  m_SizeDelta: {x: 109.3525, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422524089
 MonoBehaviour:
@@ -4298,7 +4355,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 45
     m_Alignment: 4
@@ -4565,7 +4622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1685126098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Gear3Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1685126098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4744,8 +4813,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 353, y: 66}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 320.44092, y: 66}
+  m_SizeDelta: {x: 94.8818, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707373747
 MonoBehaviour:
@@ -4823,8 +4892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.3, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 362, y: 70}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 320.45728, y: 70}
+  m_SizeDelta: {x: 76.9145, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725836089
 MonoBehaviour:
@@ -5117,7 +5186,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1805526605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Launcher1Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1805526605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5239,7 +5320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862683450}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849240416}
+        m_TargetAssemblyTypeName: BuyButtons, Assembly-CSharp
+        m_MethodName: Gear2Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1862683450
 MonoBehaviour:
   m_ObjectHideFlags: 0
