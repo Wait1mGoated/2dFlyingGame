@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      supershoemakercape_0: -7364123926756558949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,7 @@ public class ObjectSpawn : MonoBehaviour
     public GameObject rock;
     public GameObject boots;
     public GameObject FirstRoundPick;
-    public float spawnRate = 10;
+    public float objectspawnRate = 7;
     public float timer = 0;
     GameObject temp;
     // Start is called before the first frame update
@@ -23,7 +23,8 @@ public class ObjectSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawnRate)
+        objectspawnRate *= .999999f;
+        if (timer < objectspawnRate)
         {
             timer = timer + Time.deltaTime;
         }
