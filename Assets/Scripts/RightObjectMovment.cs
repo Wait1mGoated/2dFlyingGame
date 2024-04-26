@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Device;
 
-public class ObjectMovement : MonoBehaviour
+public class RightObjectMovement : MonoBehaviour
 {
-    public float objectSpeed = 0.1F;
-    public float degreesPerSec = 360f;
+    public float objectSpeedr = 0.1F;
+    public float degreesPerSecr = 360f;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        objectSpeed *= 1.00001f;
-        transform.position = transform.position + (Vector3.down * objectSpeed);
-        transform.position = transform.position + (Vector3.right * objectSpeed);
-        float rotAmount = degreesPerSec * Time.deltaTime;
+        transform.position = transform.position + (Vector3.down * objectSpeedr);
+        transform.position = transform.position + (Vector3.left * objectSpeedr);
+        float rotAmount = degreesPerSecr * Time.deltaTime;
         float curRot = transform.localRotation.eulerAngles.z;
         transform.localRotation = Quaternion.Euler(new Vector3(0, 0, curRot + rotAmount));
-      
+
     }
 }
+
