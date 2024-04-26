@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public float moveSpeed = 5;
-
+    public bool ShoeAlive = true;
     void Start()
     {
 
@@ -43,4 +43,10 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+         ShoeAlive = false;
+    }
+
 }
