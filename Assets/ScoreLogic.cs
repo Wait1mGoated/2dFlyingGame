@@ -9,6 +9,7 @@ public class ScoreLogic : MonoBehaviour
     bool stopwatchActive = true; //change to false after testing
     float currentTime;
     public Text currentTimeText;
+    public GameObject ground;
 
     int alt;
     public Text altText;
@@ -29,6 +30,10 @@ public class ScoreLogic : MonoBehaviour
         if (stopwatchActive) 
         {
             currentTime += Time.deltaTime; 
+        }
+        if (currentTime > 2)
+        {
+            ground.SetActive(false);
         }
         alt = Mathf.RoundToInt(currentTime * 4);
         if (BuyButtons.instance.Launcher1)
