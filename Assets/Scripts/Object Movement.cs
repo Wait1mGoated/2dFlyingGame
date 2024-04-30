@@ -16,8 +16,13 @@ public class ObjectMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float t = Random.Range(0, .005F);
-        objectSpeed *= 1.0001f;
+        float t = Random.Range(0, .01F);
+        int i = Random.Range(0, 2);
+        if (objectSpeed < .05)
+        {
+            objectSpeed *= 1.0001f;
+        }
+
         transform.position = transform.position + (Vector3.down * (objectSpeed - t));
         transform.position = transform.position + (Vector3.right * (objectSpeed - t));
         float rotAmount = degreesPerSec * Time.deltaTime;
