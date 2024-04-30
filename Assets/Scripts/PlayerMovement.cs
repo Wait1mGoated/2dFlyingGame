@@ -9,7 +9,18 @@ public class PlayerMovement : MonoBehaviour
     public bool ShoeAlive = true;
     void Start()
     {
-
+        if (BuyButtons.instance.Gear1) 
+        {
+            playerSpeed = 7;
+        }
+        else if (BuyButtons.instance.Gear2)
+        {
+            playerSpeed = 10;
+        }
+        else if (BuyButtons.instance.Gear3)
+        {
+            playerSpeed = 15;
+        }
     }
 
 

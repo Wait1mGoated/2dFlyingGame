@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UpgradeButtons : MonoBehaviour
 {
+    public GameObject UpgradeUI;
     public GameObject Gear;
     public GameObject Launchers;
     public void BackToMain()
@@ -14,6 +15,11 @@ public class UpgradeButtons : MonoBehaviour
     public void ToFlying() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (UpgradeUI != null) 
+        {
+            bool isActive = UpgradeUI.activeSelf;
+            UpgradeUI.SetActive(!isActive);
+        }
     }
     public void GearScreen()
     {

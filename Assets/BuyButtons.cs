@@ -6,23 +6,29 @@ using System;
 
 public class BuyButtons : MonoBehaviour
 {
+    public static BuyButtons instance;
+
     public int money;
     public Text moneyText;
-    bool Gear1 = false;
+    public bool Gear1 = false;
     public Text gear1Text;
-    bool Gear2 = false;
+    public bool Gear2 = false;
     public Text gear2Text;
-    bool Gear3 = false;
+    public bool Gear3 = false;
     public Text gear3Text;
-    bool Launcher1 = false;
+    public bool Launcher1 = false;
     public Text launcher1Text;
-    bool Launcher2 = false;
+    public bool Launcher2 = false;
     public Text launcher2Text;
-    bool Launcher3 = false;
+    public bool Launcher3 = false;
     public Text launcher3Text;
+
+    
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
         moneyText.text = "$ " + money.ToString("");
     }
 
