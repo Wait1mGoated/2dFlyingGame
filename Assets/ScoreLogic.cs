@@ -31,6 +31,18 @@ public class ScoreLogic : MonoBehaviour
             currentTime += Time.deltaTime; 
         }
         alt = Mathf.RoundToInt(currentTime * 4);
+        if (BuyButtons.instance.Launcher1)
+        {
+            alt += 100;
+        }
+        else if (BuyButtons.instance.Launcher2)
+        {
+            alt += 200;
+        }
+        else if (BuyButtons.instance.Launcher3)
+        {
+            alt += 400;
+        }
         altText.text = alt.ToString() + " km";
         score = Mathf.RoundToInt((currentTime + alt) * multiplier);
         scoreText.text = "Score: " + score.ToString();

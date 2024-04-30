@@ -2384,11 +2384,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 20000
   moneyText: {fileID: 762189}
+  Gear1: 0
   gear1Text: {fileID: 247171307}
+  Gear2: 0
   gear2Text: {fileID: 802042988}
+  Gear3: 0
   gear3Text: {fileID: 1383341319}
+  Launcher1: 0
   launcher1Text: {fileID: 265032226}
+  Launcher2: 0
   launcher2Text: {fileID: 1575552519}
+  Launcher3: 0
   launcher3Text: {fileID: 725177378}
 --- !u!1 &866452492
 GameObject:
@@ -2513,6 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f9199960e8bba4b9fa29cc17cf6058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UpgradeUI: {fileID: 849240411}
   Gear: {fileID: 1521980574}
   Launchers: {fileID: 1101626819}
 --- !u!1 &883561344
