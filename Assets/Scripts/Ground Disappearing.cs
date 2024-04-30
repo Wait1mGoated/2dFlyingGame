@@ -8,13 +8,12 @@ public class GroundDisappearing : MonoBehaviour
     public GameObject Ground;
     void Start()
     {
-
+  
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.deltaTime > 2)
-            Ground.SetActive(false);
+
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 5;
+    public float playerSpeed = 5;
     public bool ShoeAlive = true;
     void Start()
     {
@@ -15,31 +15,26 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -10f, 10f), Mathf.Clamp(transform.position.y, -4f, 4f), transform.position.z);
         if (Input.GetKey(KeyCode.D))
         {
-            if (transform.position.x > -10)
-            {
-                transform.position += Vector3.right * moveSpeed * Time.deltaTime;
-            }
-
+            transform.position += Vector3.right * playerSpeed * Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            if (transform.position.x < 10)
-            {
-                transform.position += Vector3.left * moveSpeed * Time.deltaTime;
-            }
+
+                transform.position += Vector3.left * playerSpeed * Time.deltaTime;
+      
         }
 
         else if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.up * moveSpeed * Time.deltaTime;
+            transform.position += Vector3.up * playerSpeed * Time.deltaTime;
 
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.up * -moveSpeed * Time.deltaTime;
+            transform.position += Vector3.up * -playerSpeed * Time.deltaTime;
 
         }
     }
