@@ -36,15 +36,15 @@ public class ScoreLogic : MonoBehaviour
             ground.SetActive(false);
         }
         alt = Mathf.RoundToInt(currentTime * 4);
-        if (BuyButtons.instance.Launcher1)
+        if (BuyButtons.instance.Launcher1 && BuyButtons.instance.L1Bought)
         {
             alt += 100;
         }
-        else if (BuyButtons.instance.Launcher2)
+        else if (BuyButtons.instance.Launcher2 && BuyButtons.instance.L2Bought)
         {
             alt += 200;
         }
-        else if (BuyButtons.instance.Launcher3)
+        else if (BuyButtons.instance.Launcher3 && BuyButtons.instance.L3Bought)
         {
             alt += 400;
         }

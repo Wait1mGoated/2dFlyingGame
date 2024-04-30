@@ -17,10 +17,13 @@ public class BuyButtons : MonoBehaviour
     public bool Gear3 = false;
     public Text gear3Text;
     public bool Launcher1 = false;
+    public bool L1Bought = false;
     public Text launcher1Text;
     public bool Launcher2 = false;
+    public bool L2Bought = false;
     public Text launcher2Text;
     public bool Launcher3 = false;
+    public bool L3Bought = false;
     public Text launcher3Text;
 
     
@@ -49,7 +52,7 @@ public class BuyButtons : MonoBehaviour
                 gear3Text.text = "Equip";
             }
         }
-        else if (Gear1) 
+        else if (Gear1)
         {
             gear1Text.text = "Equipped";
             if (Gear2)
@@ -127,17 +130,33 @@ public class BuyButtons : MonoBehaviour
     }
     public void Launcher1Upgrade()
     {
-        if (money >= 600 && !Launcher1)
+        if (L1Bought) 
+        {
+            Launcher1 = true; 
+            launcher1Text.text = "Equipped";
+            if (L2Bought)
+            {
+                launcher2Text.text = "Equip";
+                Launcher2 = false;
+            }
+            if (L3Bought)
+            {
+                launcher3Text.text = "Equip";
+                Launcher3 = false;
+            }
+        }
+        else if (money >= 600 && !Launcher1)
         {
             money -= 600;
             Debug.Log("This shows that the First Launcher Upgrade has been purchased");
             Launcher1 = true;
+            L1Bought = true;
             launcher1Text.text = "Equipped";
-            if (Launcher2)
+            if (L2Bought)
             {
                 launcher2Text.text = "Equip";
             }
-            if (Launcher3)
+            if (L3Bought)
             {
                 launcher3Text.text = "Equip";
             }
@@ -145,11 +164,11 @@ public class BuyButtons : MonoBehaviour
         else if (Launcher1)
         {
             launcher1Text.text = "Equipped";
-            if (Launcher2)
+            if (L2Bought)
             {
                 launcher2Text.text = "Equip";
             }
-            if (Launcher3)
+            if (L3Bought)
             {
                 launcher3Text.text = "Equip";
             }
@@ -158,17 +177,33 @@ public class BuyButtons : MonoBehaviour
     }
     public void Launcher2Upgrade()
     {
-        if (money >= 10000 && !Launcher2)
+        if (L2Bought)
+        {            
+            Launcher2 = true;
+            launcher2Text.text = "Equipped";
+            if (L1Bought)
+            {
+                launcher1Text.text = "Equip";
+                Launcher1 = false;
+            }
+            if (L3Bought)
+            {
+                launcher3Text.text = "Equip";
+                Launcher3 = false;
+            }
+        }
+        else if (money >= 10000 && !Launcher2)
         {
             money -= 10000;
             Debug.Log("This shows that the Second Launcher Upgrade has been purchased");
             Launcher2 = true;
+            L2Bought = true;
             launcher2Text.text = "Equipped";
-            if (Launcher1)
+            if (L1Bought)
             {
                 launcher1Text.text = "Equip";
             }
-            if (Launcher3)
+            if (L3Bought)
             {
                 launcher3Text.text = "Equip";
             }
@@ -176,11 +211,11 @@ public class BuyButtons : MonoBehaviour
         else if (Launcher2)
         {
             launcher2Text.text = "Equipped";
-            if (Launcher1)
+            if (L1Bought)
             {
                 launcher1Text.text = "Equip";
             }
-            if (Launcher3)
+            if (L3Bought)
             {
                 launcher3Text.text = "Equip";
             }
@@ -189,17 +224,33 @@ public class BuyButtons : MonoBehaviour
     }
     public void Launcher3Upgrade()
     {
-        if (money >= 150000 && !Launcher3)
+        if (L3Bought)
+        {                     
+            Launcher3 = true;
+            launcher3Text.text = "Equipped";
+            if (L1Bought)
+            {
+                launcher1Text.text = "Equip";
+                Launcher1 = false;
+            }
+            if (L2Bought)
+            {
+                launcher2Text.text = "Equip";
+                Launcher2 = false;
+            }
+        }
+        else if (money >= 150000 && !Launcher3)
         {
             money -= 150000;
             Debug.Log("This shows that the Third Launcher Upgrade has been purchased");
             Launcher3 = true;
+            L3Bought = true;
             launcher3Text.text = "Equipped";
-            if (Launcher2)
+            if (L2Bought)
             {
                 launcher2Text.text = "Equip";
             }
-            if (Launcher1)
+            if (L1Bought)
             {
                 launcher1Text.text = "Equip";
             }
@@ -207,11 +258,11 @@ public class BuyButtons : MonoBehaviour
         else if (Launcher3)
         {
             launcher3Text.text = "Equipped";
-            if (Launcher2)
+            if (L2Bought)
             {
                 launcher2Text.text = "Equip";
             }
-            if (Launcher1)
+            if (L1Bought)
             {
                 launcher1Text.text = "Equip";
             }
