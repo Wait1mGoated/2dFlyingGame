@@ -11,15 +11,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (BuyButtons.instance.Gear1) 
         {
-            moveSpeed = 7;
+            playerSpeed = 7;
         }
         else if (BuyButtons.instance.Gear2)
         {
-            moveSpeed = 10;
+            playerSpeed = 10;
         }
         else if (BuyButtons.instance.Gear3)
         {
-            moveSpeed = 15;
+            playerSpeed = 15;
         }
     }
 
