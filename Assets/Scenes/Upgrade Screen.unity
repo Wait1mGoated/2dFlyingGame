@@ -2382,7 +2382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad985043cd654d46939eccf1429c7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 20000
+  money: 200000
   moneyText: {fileID: 762189}
   Gear1: 0
   gear1Text: {fileID: 247171307}
@@ -2391,10 +2391,13 @@ MonoBehaviour:
   Gear3: 0
   gear3Text: {fileID: 1383341319}
   Launcher1: 0
+  L1Bought: 0
   launcher1Text: {fileID: 265032226}
   Launcher2: 0
+  L2Bought: 0
   launcher2Text: {fileID: 1575552519}
   Launcher3: 0
+  L3Bought: 0
   launcher3Text: {fileID: 725177378}
 --- !u!1 &866452492
 GameObject:

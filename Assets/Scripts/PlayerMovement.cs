@@ -31,19 +31,19 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position += Vector3.right * playerSpeed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
 
                 transform.position += Vector3.left * playerSpeed * Time.deltaTime;
       
         }
 
-        else if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.up * playerSpeed * Time.deltaTime;
 
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.position += Vector3.up * -playerSpeed * Time.deltaTime;
 
